@@ -1,0 +1,50 @@
+/* Las variables en CSS se aplican al pseudoelemento root */
+
+/* Root maneja todo el proyecto */
+/* Las variables en CSS se crean con dos guiones+nombre de la variables */
+:root{
+    --bg-home: #D6E9FE;
+    --fonts: 44px;
+    --bordes-menu: 1px solid black;
+
+
+    /* Botones */
+    --relleno: 40px 20px;
+    --radius: 4px;
+    --bordes: 1px solid gray;
+}
+
+/* Cuando quiero aplicar la variable se debe utilizar la función var */
+
+h1{
+    font-size: var(--fonts);
+}
+
+.parrafo-uno{
+    border: var(--bordes-menu);
+}
+
+.section-uno{
+    background-color: var(--bg-home);
+    color: white;
+    font-size: var(--fonts);
+}
+
+.ok, .error{
+    padding: var(--relleno);
+    border-radius: var(--radius);
+    border: var(--bordes);
+}
+.error{
+    background-color: red;
+}
+.ok{
+    background-color: green;
+}
+
+.bg-imagen{
+    background-image:url(./images/michael-jordan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
